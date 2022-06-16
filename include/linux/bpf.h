@@ -14,7 +14,7 @@
 #include "ebpf_program_types.h"
 #include "ebpf_api.h"
 #define LIBBPF_API
-#include "libbpf/src/libbpf_common.h"
+#include "../external/libbpf/src/libbpf_common.h"
 #undef LIBBPF_DEPRECATED
 #define LIBBPF_DEPRECATED(x)
 #else
@@ -33,7 +33,7 @@ typedef int32_t __s32;
 typedef uint8_t __u8;
 typedef uint32_t __u32;
 typedef uint64_t __u64;
-typedef uint32_t pid_t;
+//typedef uint32_t pid_t;
 
 enum bpf_func_id
 {
